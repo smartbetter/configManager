@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>配置中心-V1.0</title>
+    <link rel="stylesheet" href="$!rootContextPath.getURI("/js/plugins/layui/css/layui.css")" media="all">
+    <link rel="stylesheet" href="$!rootContextPath.getURI("/js/plugins/font-awesome/css/font-awesome.min.css")" media="all">
+    <link rel="stylesheet" href="$!rootContextPath.getURI("/css/busi/app.css")" media="all">
+    <script src="$!rootContextPath.getURI("/js/plugins/layui/layui.js")" charset="utf-8"></script>
+    <script src="$!rootContextPath.getURI("/js/busi/app.js")" charset="utf-8"></script>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+    #parse("/templates/home/control/menu.vm")
+    <div class="layui-body" style="padding: 10px;" id="container">
+        <!-- 内容主体区域 -->
+        $screen_content
+    </div>
+    <!-- 底部固定区域 --><!--
+    <div class="layui-footer">
+        <span>©2018 Example xx有限公司 晋ICP备xx号-1</span>
+    </div>-->
+</div>
+<script>
+    layui.use(['element'], function () {
+    });
+</script>
+</body>
+</html>

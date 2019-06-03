@@ -1,0 +1,26 @@
+#set($layout = "/templates/$layoutVm")
+<link rel="stylesheet" href="$!rootContextPath.getURI("/css/busi/illegal.css")" media="all">
+<div class="illegal-warp">
+    <table>
+        <tr>
+            <td rowspan="5"><img src="http://m.360buyimg.com/mobilecms/jfs/t1/36921/11/5257/4059/5cbee011E4682817c/04d126339776a179.png"></td>
+            <td class="header">很抱歉！当前页面发生错误</td>
+        </tr>
+        <tr><td id="errorMsg">$!errorMsg</td></tr>
+    </table>
+</div>
+
+<script type="text/javascript">
+    //加载所需模块
+    layui.use(['element', 'layer'], function() {
+        var layer = layui.layer //弹层
+                , $ = layui.$;
+
+        $('#errorMsg').on('click', function () {
+            layer.open({
+                area: ['650px','400px'], //宽高
+                content: '$!errorDetailMsg'
+            });
+        });
+    });
+</script>

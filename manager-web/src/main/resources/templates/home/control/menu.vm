@@ -1,0 +1,79 @@
+<div class="layui-header">
+    <div class="layui-logo"><a href="$!rootContextPath.getURI("/")">
+        #if($!serverEnv == "production")
+            配置中心 (线上环境)
+        #elseif($!serverEnv == "beta")
+            配置中心 (预发环境)
+        #elseif($!serverEnv == "dev")
+            配置中心 (开发环境)
+        #elseif($!serverEnv == "test")
+            配置中心 (测试环境)
+        #else
+            配置中心
+        #end
+    </a></div>
+    <!-- 头部区域(可配合layui已有的水平导航) -->
+    <ul class="layui-nav layui-layout-right">
+        <li class="layui-nav-item">
+            <a href="javascript:;">
+                <img src="http://m.360buyimg.com/mobilecms/jfs/t1/11942/34/4347/3072/5c272b5bE21a56933/2055aa265e54499e.png"
+                     class="layui-nav-img">$!operator
+            </a>
+            <dl class="layui-nav-child">
+                <dd><a href="$!rootContextPath.getURI("/userinfo")">基本资料</a></dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item">
+            <a href="javascript:;" id="logout">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>注销</a>
+        </li>
+    </ul>
+</div>
+<div class="layui-side layui-bg-black kit-side">
+    <div class="layui-side-scroll">
+        <!-- 左侧导航区域(可配合layui已有的垂直导航) -->
+        <ul id="nav" class="layui-nav layui-nav-tree" lay-filter="kitNavbar" kit-navbar></ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    layui.config({
+        base: '$!rootContextPath.getURI("/js/busi/layui/js/")' //这是自定义模块的路径了
+    }).use(['jquery', 'navbar'], function () {
+        var $ = layui.$;
+        var navbar = layui.navbar;
+        navbar.set({
+            remote: {
+                url: '$!rootContextPath.getURI("/mockjson/nav.json")'
+            },
+            elem: '#nav'
+        });
+        navbar.render();
+
+        //退出登录事件
+        $('#logout').on('click', function () {
+            $.ajax({
+                url: '$!rootContextPath.getURI("/json/user/logout")',
+                //在发送请求之前调用
+                beforeSend: function (request) {
+                    request.setRequestHeader('IsAjax', 'true');
+                },
+                dataType: 'json',
+                method: 'POST',
+                error: function (xhr, err, msg) {
+                    layer.msg('退出失败');
+                },
+                success: function (res) {
+                    if (res.code == '0') {
+                        window.location = res.preUrl;
+                    } else {
+                        layer.msg(res.msg);
+                    }
+                }
+            });
+        });
+    }).use(['jquery'], function () {
+        var $ = layui.$;
+
+    });
+</script>

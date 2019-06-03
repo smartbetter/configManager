@@ -1,0 +1,11 @@
+#set($layout = "/templates/home/layout/default.vm")
+<link rel="stylesheet" href="$!rootContextPath.getURI("/css/busi/illegal.css")" media="all">
+<div class="illegal-warp">
+    <table>
+        <tr>
+            <td rowspan="5"><img src="http://m.360buyimg.com/mobilecms/jfs/t1/36921/11/5257/4059/5cbee011E4682817c/04d126339776a179.png"></td>
+            <td class="header">很抱歉！404错误</td>
+        </tr>
+        <tr><td>没有找到您要访问的页面</td></tr>
+    </table>
+</div>

@@ -1,0 +1,359 @@
+[
+  {
+    "id": "/",
+    "text": "/",
+    "state": {
+      "opened": true
+    },
+    "children": [
+      {
+        "id": "/configCenter",
+        "text": "configCenter",
+        "children": [
+          {
+            "id": "/configCenter/home",
+            "text": "home",
+            "children": [
+              {
+                "id": "/configCenter/home/business",
+                "text": "business"
+              },
+              {
+                "id": "/configCenter/home/degrade",
+                "text": "degrade"
+              },
+              {
+                "id": "/configCenter/home/control",
+                "text": "control"
+              },
+              {
+                "id": "/configCenter/home/log",
+                "text": "log"
+              },
+              {
+                "id": "/configCenter/home/monitor",
+                "text": "monitor"
+              },
+              {
+                "id": "/configCenter/home/tracer",
+                "text": "tracer"
+              },
+              {
+                "id": "/configCenter/home/cache",
+                "text": "cache"
+              },
+              {
+                "id": "/configCenter/home/threadpool",
+                "text": "threadpool"
+              }
+            ]
+          },
+          {
+            "id": "/configCenter/search",
+            "text": "search",
+            "children": [
+              {
+                "id": "/configCenter/search/business",
+                "text": "business"
+              },
+              {
+                "id": "/configCenter/search/degrade",
+                "text": "degrade"
+              },
+              {
+                "id": "/configCenter/search/control",
+                "text": "control"
+              },
+              {
+                "id": "/configCenter/search/log",
+                "text": "log"
+              },
+              {
+                "id": "/configCenter/search/monitor",
+                "text": "monitor"
+              },
+              {
+                "id": "/configCenter/search/tracer",
+                "text": "tracer"
+              },
+              {
+                "id": "/configCenter/search/cache",
+                "text": "cache"
+              },
+              {
+                "id": "/configCenter/search/threadpool",
+                "text": "threadpool"
+              }
+            ]
+          },
+          {
+            "id": "/configCenter/ware",
+            "text": "ware",
+            "children": [
+              {
+                "id": "/configCenter/ware/business",
+                "text": "business"
+              },
+              {
+                "id": "/configCenter/ware/degrade",
+                "text": "degrade"
+              },
+              {
+                "id": "/configCenter/ware/control",
+                "text": "control"
+              },
+              {
+                "id": "/configCenter/ware/log",
+                "text": "log"
+              },
+              {
+                "id": "/configCenter/ware/monitor",
+                "text": "monitor"
+              },
+              {
+                "id": "/configCenter/ware/tracer",
+                "text": "tracer"
+              },
+              {
+                "id": "/configCenter/ware/cache",
+                "text": "cache"
+              },
+              {
+                "id": "/configCenter/ware/threadpool",
+                "text": "threadpool"
+              }
+            ]
+          },
+          {
+            "id": "/configCenter/cart",
+            "text": "cart",
+            "children": [
+              {
+                "id": "/configCenter/cart/business",
+                "text": "business"
+              },
+              {
+                "id": "/configCenter/cart/degrade",
+                "text": "degrade"
+              },
+              {
+                "id": "/configCenter/cart/control",
+                "text": "control"
+              },
+              {
+                "id": "/configCenter/cart/log",
+                "text": "log"
+              },
+              {
+                "id": "/configCenter/cart/monitor",
+                "text": "monitor"
+              },
+              {
+                "id": "/configCenter/cart/tracer",
+                "text": "tracer"
+              },
+              {
+                "id": "/configCenter/cart/cache",
+                "text": "cache"
+              },
+              {
+                "id": "/configCenter/cart/threadpool",
+                "text": "threadpool"
+              }
+            ]
+          },
+          {
+            "id": "/configCenter/balance",
+            "text": "balance",
+            "children": [
+              {
+                "id": "/configCenter/balance/business",
+                "text": "business"
+              },
+              {
+                "id": "/configCenter/balance/degrade",
+                "text": "degrade"
+              },
+              {
+                "id": "/configCenter/balance/control",
+                "text": "control"
+              },
+              {
+                "id": "/configCenter/balance/log",
+                "text": "log"
+              },
+              {
+                "id": "/configCenter/balance/monitor",
+                "text": "monitor"
+              },
+              {
+                "id": "/configCenter/balance/tracer",
+                "text": "tracer"
+              },
+              {
+                "id": "/configCenter/balance/cache",
+                "text": "cache"
+              },
+              {
+                "id": "/configCenter/balance/threadpool",
+                "text": "threadpool"
+              }
+            ]
+          },
+          {
+            "id": "/configCenter/pay",
+            "text": "pay",
+            "children": [
+              {
+                "id": "/configCenter/pay/business",
+                "text": "business"
+              },
+              {
+                "id": "/configCenter/pay/degrade",
+                "text": "degrade"
+              },
+              {
+                "id": "/configCenter/pay/control",
+                "text": "control"
+              },
+              {
+                "id": "/configCenter/pay/log",
+                "text": "log"
+              },
+              {
+                "id": "/configCenter/pay/monitor",
+                "text": "monitor"
+              },
+              {
+                "id": "/configCenter/pay/tracer",
+                "text": "tracer"
+              },
+              {
+                "id": "/configCenter/pay/cache",
+                "text": "cache"
+              },
+              {
+                "id": "/configCenter/pay/threadpool",
+                "text": "threadpool"
+              }
+            ]
+          },
+          {
+            "id": "/configCenter/order",
+            "text": "order",
+            "children": [
+              {
+                "id": "/configCenter/order/business",
+                "text": "business"
+              },
+              {
+                "id": "/configCenter/order/degrade",
+                "text": "degrade"
+              },
+              {
+                "id": "/configCenter/order/control",
+                "text": "control"
+              },
+              {
+                "id": "/configCenter/order/log",
+                "text": "log"
+              },
+              {
+                "id": "/configCenter/order/monitor",
+                "text": "monitor"
+              },
+              {
+                "id": "/configCenter/order/tracer",
+                "text": "tracer"
+              },
+              {
+                "id": "/configCenter/order/cache",
+                "text": "cache"
+              },
+              {
+                "id": "/configCenter/order/threadpool",
+                "text": "threadpool"
+              }
+            ]
+          },
+          {
+            "id": "/configCenter/myhome",
+            "text": "myhome",
+            "children": [
+              {
+                "id": "/configCenter/myhome/business",
+                "text": "business"
+              },
+              {
+                "id": "/configCenter/myhome/degrade",
+                "text": "degrade"
+              },
+              {
+                "id": "/configCenter/myhome/control",
+                "text": "control"
+              },
+              {
+                "id": "/configCenter/myhome/log",
+                "text": "log"
+              },
+              {
+                "id": "/configCenter/myhome/monitor",
+                "text": "monitor"
+              },
+              {
+                "id": "/configCenter/myhome/tracer",
+                "text": "tracer"
+              },
+              {
+                "id": "/configCenter/myhome/cache",
+                "text": "cache"
+              },
+              {
+                "id": "/configCenter/myhome/threadpool",
+                "text": "threadpool"
+              }
+            ]
+          },
+          {
+            "id": "/configCenter/individuation",
+            "text": "individuation",
+            "children": [
+              {
+                "id": "/configCenter/individuation/business",
+                "text": "business"
+              },
+              {
+                "id": "/configCenter/individuation/degrade",
+                "text": "degrade"
+              },
+              {
+                "id": "/configCenter/individuation/control",
+                "text": "control"
+              },
+              {
+                "id": "/configCenter/individuation/log",
+                "text": "log"
+              },
+              {
+                "id": "/configCenter/individuation/monitor",
+                "text": "monitor"
+              },
+              {
+                "id": "/configCenter/individuation/tracer",
+                "text": "tracer"
+              },
+              {
+                "id": "/configCenter/individuation/cache",
+                "text": "cache"
+              },
+              {
+                "id": "/configCenter/individuation/threadpool",
+                "text": "threadpool"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

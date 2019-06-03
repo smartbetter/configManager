@@ -1,0 +1,25 @@
+/* 权限错误页面的一些自定义样式 */
+
+.illegal-warp {
+    font-size: 13px;
+    font-family: 'helvetica neue', tahoma, arial, 'hiragino sans gb', 'microsoft yahei', 'Simsun', sans-serif;
+    background-color: #fff;
+    color: #808080;
+    margin: 260px auto;
+    width: 390px
+}
+
+.illegal-warp td {
+    text-align: left;
+    padding-left: 10px
+}
+
+.illegal-warp td img {
+    width: 52px;
+    height: 52px
+}
+
+.illegal-warp td.header {
+    font-size: 18px;
+    color: #000
+}

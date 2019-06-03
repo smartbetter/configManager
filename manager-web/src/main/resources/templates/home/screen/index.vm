@@ -1,0 +1,2 @@
+#set($layout = "/templates/home/layout/default.vm")
+<div style="padding: 15px;">点击左侧菜单加载...</div>

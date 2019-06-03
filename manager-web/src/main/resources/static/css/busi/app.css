@@ -1,0 +1,88 @@
+/* layui-v2.4.5 这里覆写layui.css的一些样式 */
+
+body {
+    line-height: 24px;
+    font: 13px Helvetica Neue, Helvetica, PingFang SC, Tahoma, Arial, sans-serif /* 修改14px->13px */
+}
+
+.layui-layout-admin .layui-logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    color: #aeb9c2; /* 修改 */
+    font-size: 15px /* 修改 */
+}
+
+.layui-nav * {
+    font-size: 13px /* 修改 */
+}
+
+.layui-icon {
+    font-family: layui-icon !important;
+    font-size: 15px; /* 修改 */
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.fa {
+    font-size: 15px; /* 修改 */
+}
+
+.layui-table td, .layui-table th {
+    position: relative;
+    padding: 9px 15px;
+    min-height: 20px;
+    line-height: 20px;
+    font-size: 13px /* 修改 */
+}
+
+.layui-logo a { /* 修改 */
+    text-decoration: none;
+    color: #aeb9c2;
+}
+
+.layui-layout-admin .layui-footer span { /* 修改 */
+    font-size: 13px;
+    color: #999999;
+}
+
+.layui-elem-field legend {
+    margin-left: 20px;
+    padding: 0 10px;
+    font-size: 16px; /* 修改 */
+    font-weight: 300
+}
+
+.layui-layout-admin .layui-body {
+    top: 60px; /* 修改 */
+    bottom: 0 /* 修改 */
+}
+
+.layui-table, .layui-table-view {
+    margin: 0 0 /* 修改 */
+}
+
+/* 下面是一些自定义的样式 */
+
+.container-body, .config-tree, .config-view { /* 添加 2019/01/17 */
+    border: 1px solid #E6E6E6; /* 边框 */
+    padding: 10px;
+}
+
+.config-tree { /* 添加 2019/05/01 */
+    float:left;
+    overflow:auto;
+    width:200px;
+    min-height:576px;
+    padding:10px 0 10px 0;
+}
+
+.config-view { /* 添加 2019/05/01 */
+    margin-left: 212px;
+    min-height:576px;
+}

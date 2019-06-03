@@ -1,0 +1,38 @@
+#set($layout = "/templates/home/layout/default.vm")
+<link rel="stylesheet" href="$!rootContextPath.getURI("/js/plugins/jstree/themes/default/style.min.css")" media="all">
+<script src="$!rootContextPath.getURI("/js/jquery/jquery-1.12.4.min.js")" charset="utf-8"></script>
+<script src="$!rootContextPath.getURI("/js/plugins/jstree/jstree.min.js")" charset="utf-8"></script>
+
+<div class="config-tree" id="configtree"></div>
+<div class="config-view" id="configview">
+    点击左侧菜单加载配置数据...
+</div>
+
+<script type="text/javascript">
+    $(function() {
+        $('#configtree').jstree({
+            'core' : {
+                'animation' : 0,  //打开、折叠时的动画过渡时间,默认200
+                'check_callback' : true, //当用户想修改树的结构时,此参数用于决定是否允许修改或如何修改
+                'force_text' : true,     //强制将节点的text值解释为纯文本
+                'multiple': false,       //是否允许节点多选
+                'themes' : {      //用于配置主题
+                    "stripes" : false,   //背景是否显示间纹
+                    "dots": false        //是否显示树连接线
+                },
+                'data' : {
+                    "url" : '$!rootContextPath.getURI("/mockjson/configtree.json")',
+                    "type": "GET",
+                    "dataType" : "json" // needed only if you do not supply JSON headers
+                }
+            }
+        }).on('changed.jstree', function (e, data) { //监听事件
+            if(data && data.selected && data.selected.length) {
+                //console.log(data.selected[0]);
+                $("#configview").load('$!rootContextPath.getURI("/config/list")', {zkId: data.selected[0]}, function(){
+                    //回调函数
+                });
+            }
+        });
+    });
+</script>

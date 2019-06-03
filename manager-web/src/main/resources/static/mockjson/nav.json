@@ -1,0 +1,28 @@
+[
+  {
+    "title": "配置中心",
+    "icon": "fa-file-text",
+    "spread": false,
+    "children": [
+      {
+        "title": "配置管理",
+        "url": "/config"
+      },
+      {
+        "title": "紧急配置",
+        "url": "/urgentconfig"
+      }
+    ]
+  },
+  {
+    "title": "设置",
+    "icon": "fa-cog",
+    "spread": false,
+    "children": [
+      {
+        "title": "基本资料",
+        "url": "/userinfo"
+      }
+    ]
+  }
+]
